@@ -1,28 +1,19 @@
+# 🔍 Formulário de Pesquisa de Issues do GitHub
 
-## 🛠 Como funciona
+O componente `SearchForm` permite aos usuários pesquisar e visualizar issues do GitHub. Ele usa a API do GitHub para buscar issues baseadas na consulta inserida e, ao clicar em uma issue, o usuário é redirecionado para uma página de detalhes.
 
-Utiliza os hooks `useEffect` e `useState` do React para buscar os dados via API do GitHub. Após obter os dados, eles são exibidos na interface.
+## 🌟 Funcionalidades Principais:
 
-## ✨ Recursos
+- 📝 **Formulário de Pesquisa**: Utiliza `react-hook-form` para coletar a consulta do usuário.
+  
+- 🌐 **Busca de Issues**: Ao enviar o formulário, issues relacionadas são buscadas na API do GitHub e exibidas através do componente `Content`.
 
-- 📡 Integração com a API do GitHub através do Axios.
-- 🖼 Exibição da imagem do perfil, nome e biografia do usuário.
-- 🔄 Estado de carregamento durante a busca.
+- 🚀 **Navegação**: Ao clicar em uma issue, o usuário é redirecionado para uma página de detalhes usando o `useNavigate` do `react-router-dom`.
 
-## 🚀 Uso
+## 🎨 Estilização:
 
-1. Instale as dependências:
-   - React: `npm install react` ou `yarn add react`
-   - Axios: `npm install axios` ou `yarn add axios`
-   
-2. Copie e integre o componente `Resumo` no seu projeto.
+Os estilos são definidos através do `SearchFormContainer`, um componente styled, e o componente `Content` exibe os resultados.
 
-## 📦 Exemplo
+## 🛠️ Uso:
 
-```tsx
-import React from 'react';
-import { Resumo } from './Resumo';
-
-
-
-🚫 **Nota**: Este componente é para fins demonstrativos e educacionais, não sendo otimizado para produção.
+Para usar, instale as bibliotecas `react-hook-form`, `axios` e `react-router-dom`. Em seguida, importe e renderize o componente `SearchForm` onde desejar. Personalize conforme necessário.
